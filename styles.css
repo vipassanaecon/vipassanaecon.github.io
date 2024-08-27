@@ -1,0 +1,40 @@
+/* styles.css */
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light grey background */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    padding-left: 40px; /* Adjust this value to move the header to the right */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+    font-size: 36px;
+    /*font-weight: bold;*/
+    /*margin-right: 20px;  Optional: Adds some space between the brand and nav links */
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    /* padding-left: 100; Remove any padding */
+    /* margin-left: 100;  /* Align to the left */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
