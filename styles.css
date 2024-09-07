@@ -15,26 +15,19 @@ header, main, footer {
   overflow-x: hidden;
 }
 
-/*body {*/
-/*    font-family: 'Roboto Mono', monospace;*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    background-color: #f0f0f0; !* Light grey background *!*/
-/*}*/
-
-/*header {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    background-color: #f8f8f8;*/
-/*    padding: 10px 0%;*/
-/*    !* padding-left: 40px; *! !* Adjust this value to move the header to the right *!*/
-/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
-/*    width: 98%; !* Header takes up the full width of the viewport *!*/
-/*}*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 0%;
+    /* padding-left: 40px; */ /* Adjust this value to move the header to the right */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 98%; /* Header takes up the full width of the viewport */
+}
 
 .brand {
-    font-size: 36px;
+    font-size: 4vw; /* Font size relative to the viewport width */
 }
 
 .nav-links {
