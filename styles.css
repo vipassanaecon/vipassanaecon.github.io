@@ -11,15 +11,14 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #f8f8f8;
-    padding: 10px 20px;
-    padding-left: 40px; /* Adjust this value to move the header to the right */
+    padding: 10px 0%;
+    /* padding-left: 40px; */ /* Adjust this value to move the header to the right */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 98%; /* Header takes up the full width of the viewport */
 }
 
 .brand {
     font-size: 36px;
-    /*font-weight: bold;*/
-    /*margin-right: 20px;  Optional: Adds some space between the brand and nav links */
 }
 
 .nav-links {
@@ -37,4 +36,12 @@ header {
 
 .nav-links a:hover {
     color: #007BFF;
+}
+
+img {
+    width: 98%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
 }
