@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 
+/*may not need below*/
 /* Desktop layout (default) */
 .container {
     display: grid;
@@ -16,6 +17,7 @@
         grid-template-columns: 1fr;
     }
 }
+/*may not need above*/
 
 html, body {
     background-color: #e7e7e7;
