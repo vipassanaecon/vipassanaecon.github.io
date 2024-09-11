@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+:root {
+    --beige: #f5f5dc; /* Beige color */
+}
+
 /*may not need below*/
 /* Desktop layout (default) */
 .container {
@@ -20,7 +24,7 @@
 /*may not need above*/
 
 html, body {
-    background-color: #e7e7e7;
+    background-color: #f5f5dc;
     margin: 0px;
     padding: 20px;
     width: 100%;
@@ -30,7 +34,10 @@ html, body {
 header, main, footer {
     width: 100%;
     overflow-x: hidden;
-    background-color: #edecec
+    background-color: #f5f5dc
+    /*font-family: 'Times New Roman', sans-serif;*!*/
+    /*font-size: 16px; !* Optional: Update font size *!*/
+    /*font-weight: normal; !* Optional: Update font weight *!*/
 }
 
 header {
@@ -40,17 +47,20 @@ header {
     padding: 0px 0%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
+    font-family: 'Arial', sans-serif;
 }
 
 .brand {
     font-size: 4vw;
     padding: 15px;
+    font-family: 'Arial', sans-serif;
 }
 
 .nav-links {
     display: flex;
     gap: 15px;
     padding: 15px;
+    font-family: 'Arial', sans-serif;
 }
 
 .nav-links a {
