@@ -47,6 +47,7 @@
     .about-text {
         width: 100%;
         max-width: none; /* Remove max-width restriction */
+        font-family: 'Garamond', sans-serif;
     }
 }
 
@@ -71,20 +72,20 @@ header {
     padding: 0px 0%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Garamond', sans-serif;
 }
 
 .brand {
     font-size: 4vw;
     padding: 15px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Garamond', sans-serif;
 }
 
 .nav-links {
     display: flex;
     gap: 15px;
     padding: 15px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Garamond', sans-serif;
 }
 
 .nav-links a {
