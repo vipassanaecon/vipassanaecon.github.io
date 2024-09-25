@@ -132,27 +132,29 @@ header {
 /* Media query for mobile devices */
 @media (max-width: 768px) {
     .brand {
-        /*font-size: 10vw;*/
         font-size: clamp(20px, 10vw, 40px); /* Minimum 16px, scalable with viewport, max 24px */
         padding: 15px;
         font-family: 'Garamond', sans-serif;
     }
 
     header {
+        width: 100%;
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Align content to the left */
         font-size: 10vw;
     }
 
     .nav-links {
+        /*width: 100%;*/
         margin-top: 0px; /* Add some space between brand and links */
+        text-align: center; /* Center the text */
     }
     /*nav-links a ensures each navigation link is displayed on a new line*/
     .nav-links a {
+        /*width: 100%;*/
         display: block; /* Make each link occupy a separate line */
         margin-bottom: 10px; /* Space between each link */
-        /*font-size: 3vw;*/
-        font-size: clamp(16px, 3vw, 24px); /* Ensure both header and links are responsive and the same size */
+        font-size: clamp(16px, 3vw, 24px); !* Ensure both header and links are responsive and the same size *!*/
     }
 
     .about-container {
