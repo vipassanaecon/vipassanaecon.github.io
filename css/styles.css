@@ -19,16 +19,17 @@ header, main, footer {
 }
 
 header {
+    position: relative;
+    z-index: 1; /* Lower z-index than dropdown */
     display: flex;
     justify-content: space-between;
     align-items: center;
     /*padding: 20px 0%;*/
-    padding: 0 0 50px 0;  /* Only adds padding to the bottom */
-    margin-bottom: 50px; /* Optional: Space between the header and the next section */
+    padding: 0 0 100px 0;  /* Only adds padding to the bottom */
+    margin-bottom: 100px; /* Optional: Space between the header and the next section */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     font-family: 'Garamond', sans-serif;
-    z-index: 1; /* Lower z-index than dropdown */
 }
 
 
@@ -61,18 +62,24 @@ header {
     display: inline-block;
 }
 
-/* Hide dropdown content by default */
+/* Dropdown button */
+.dropbtn {
+    cursor: pointer;
+}
+
+/* Dropdown content */
 .dropdown-content {
-    display: none;
+    display: none; /* Hidden by default */
     position: absolute;
-    top: 100%; /* Position the dropdown just below the parent */
+    top: 100%; /* Position it directly below the dropdown button */
+    left: 0;
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    z-index: 10; /* Higher z-index so it appears above the header */
+    z-index: 10; /* Higher z-index than header to ensure it appears on top */
     border-radius: 4px;
     padding: 0;
-    overflow: hidden; /* Ensure the dropdown content doesn't exceed its boundaries */
+    overflow: hidden;
 }
 
 /* Style dropdown items */
@@ -92,14 +99,9 @@ header {
     background-color: #f1f1f1;
 }
 
-/* Show the dropdown when hovering */
+/* Show dropdown when hovering over the dropdown container */
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-/* Style the dropdown button (Visualizations link) */
-.dropbtn {
-    cursor: pointer;
 }
 
 .about-container {
