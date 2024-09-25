@@ -23,9 +23,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*padding: 20px 0%;*/
-    padding: 0 0 80px 0; /* Only adds padding to the bottom */
-    margin-bottom: 20px; /* Optional: Space between the header and the next section */
+    padding: 20px 0%;
+    /*padding: 0 0 0px 0;  Only adds padding to the bottom */
+    /* margin-bottom: 20px; /* Optional: Space between the header and the next section */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     font-family: 'Garamond', sans-serif;
@@ -133,7 +133,7 @@ header {
 @media (max-width: 768px) {
     header {
         flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align content to the left */
+        align-items: center; /* Align content to the left */
         font-size: 10vw;
     }
 
